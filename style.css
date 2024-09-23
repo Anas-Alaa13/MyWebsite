@@ -1,0 +1,334 @@
+body {
+    
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-color: #eee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+   position: relative;
+}
+  body.dark-mode {
+    background-color: black;
+    footer .social-icons a{
+        font-size: 1.3em;
+        padding: 0 12px 0 0;
+        color: white;
+        transition: 0.7s ease;
+    }
+    .sec .words{
+        background-color:black;
+    }
+  }
+  
+  .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+ header{
+    width: 100%;
+    /* position:fixed; */
+    display: flex;
+    justify-content: space-between;
+     z-index: 999;
+ }
+  .logo{
+    padding: 10px;
+    transition: 0.7s ease;
+        position: relative;
+        font-family: 'cursive', Lucida Handwriting;
+        font-size: 2.2em;
+        letter-spacing: 1px;
+        background: 
+        linear-gradient(to bottom, rgba(60, 88, 144, 0.867) 40%,
+         rgba(197, 37, 37, 0.675));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    
+}  
+.logo:hover{
+    scale: 1.1;
+}
+.navigation{
+    padding: 20px;
+
+}
+.navigation a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'cursive', Lucida Handwriting;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    background: 
+    linear-gradient(to bottom, rgba(60, 88, 144, 0.867) 40%,
+     rgba(197, 37, 37, 0.675));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navigation button{
+border-radius: 10px;
+border-color: #eee;
+font-family: 'cursive', Lucida Handwriting;
+font-size: 1.5em;
+letter-spacing: 1px;
+background: 
+linear-gradient(to bottom, rgba(60, 88, 144, 0.867) 40%,
+ rgba(197, 37, 37, 0.675));
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+.toggle-btn{
+    display: none; 
+    position: relative;
+
+}
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block; 
+        position: relative;
+      }
+    }
+    .toggle-btn::after {
+        content: '';
+        position: absolute;
+        top: 79%; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid white; 
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+.toggle-btn:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(10px);        
+}
+      
+
+
+
+
+
+
+
+.sec{
+    margin-top: 20px;
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background: url(./image/photo_2023-09-11_21-34-30.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .sec{
+        min-height: 100%;
+    }
+}
+.sec .words{
+    background-color: #eee;
+    padding: 20px;
+  text-align: center;
+}
+.sec .info p{
+    font-family: 'cursive', Lucida Handwriting;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    background: 
+    linear-gradient(to bottom, rgba(60, 88, 144, 0.867) 40%,
+     rgba(197, 37, 37, 0.675));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+     transition:0.7s ease; 
+}
+.sec .info p:hover{
+    scale: 1.03;
+}
+
+
+
+
+
+
+
+
+
+
+.projects{
+    margin-top: 30px;;
+    text-align: center;
+    
+}
+.projects .title{
+    font-family: 'cursive', Lucida Handwriting;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    background: 
+    linear-gradient(to bottom, rgba(60, 88, 144, 0.867) 40%,
+     rgba(197, 37, 37, 0.675));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+     transition: 0.7s ease; 
+     }
+
+.projects .title:hover{
+    scale: 1.1;
+}
+
+.projects .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+}
+
+.project-card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+p{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cards-contact{
+    margin-top: 30px;;
+    text-align: center;
+    
+}
+.cards-contact .title{
+    font-family: 'cursive', Lucida Handwriting;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    background: 
+    linear-gradient(to bottom, rgba(60, 88, 144, 0.867) 40%,
+     rgba(197, 37, 37, 0.675));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+     transition: 0.7s ease; 
+}
+.cards-contact .title:hover{
+    scale: 1.1;
+}
+
+.cards-contact .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+
+.card {
+background-color: #eee;
+width: 21.25em;
+box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+border-radius: 10px;
+padding: 25px;
+margin: 15px;
+transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.pfoot{
+       font-family: 'cursive', Lucida Handwriting;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    background: 
+    linear-gradient(to bottom, rgba(60, 88, 144, 0.867) 40%,
+     rgba(197, 37, 37, 0.675));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+     transition: 0.7s ease; 
+}
+.pfoot:hover{
+    scale:1.1
+}
+
+footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    color: black;
+    transition: 0.7s ease;
+}
+footer .social-icons a:hover{
+    scale: 1.1;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>My Website</title>
+</head>
+<body>
+    <div class="container">
+
+     <header>
+        <div class="logo"> Anas Alaa</div>
+        <div class="navigation">
+            <button class="toggle-btn" id="toggle-btn">☰</button> 
+            <button id="toggle-dark-mode">dark-mode</button>
+            <a href="#info">info</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+     </header>
+
+
+
+
+<section class="sec" id="info">
+    <div class="words">
+    <div class="info">
+       <p> I'm Anas Alaa <br> I am a second-year student in the Faculty of Computers and Information, Ain Shams University, and I aspire to work in the field of web page development   </p> 
+    </div>
+    </div>
+</section>
+
+
+ 
+
+<section class="projects" id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="content">
+        
+        <div class="project-card">
+                <img src="./image/download.webp" />
+            <div class="project-info">
+                <p class="project-category">Icy Tower game using sfml</p>
+                <strong class="project-title">
+                    <span>Icy Tower</span>
+                    <a href="#" class="more-details">More details</a>
+                </strong>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="./image/download.jpeg" />
+            </div>
+            <div class="project-info">
+                <p class="project-category">fireboy and watergirl game using sfml</p>
+                <strong class="project-title">
+                    <span>fireboy and watergirl</span>
+                    <a href="#" class="more-details">More details</a>
+                </strong>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-image">
+                <img src="./image/Capture.PNG" />
+            </div>
+            <div class="project-info">
+                <p class="project-category">Website using html,css,javascript,bootstrap</p>
+                <strong class="project-title">
+                    <span>Website</span>
+                    <a href="#" class="more-details">More details</a>
+                </strong>
+            </div>
+        </div>
+        
+</section>
+
+
+<section class="cards-contact" id="contact">
+    <h2 class="title">Let's work together</h2>
+    <div class="content">
+        <div class="card">
+            <div class="icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="info">
+                <h3>Phone</h3>
+                <p class="pfoot">01027014209</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <a href="anasalaasaad13@gmail.com">Anas Alaa</a>
+            </div>
+        </div>  
+         <div class="card">
+            <div class="icon">
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="info">
+                <h3>linkedin</h3>
+                <a href="https://www.linkedin.com/in/anas-alaa-076505329/">Anas Alaa</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <p class="pfoot">Copyrights @ Anas Alaa</p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/anas-alaa-076505329/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Anas-Alaa13"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100010300264280&sk=about&locale=ar_AR"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@Anas_Alaa_2005/featured"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+
+    </div>
+
+
+
+
+    <script>
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        const body = document.body;
+      
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+          body.classList.add('dark-mode');
+        }
+      
+        toggleButton.addEventListener('click', () => {
+          body.classList.toggle('dark-mode');
+      
+          if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('dark-mode', 'enabled');
+          } else {
+            localStorage.setItem('dark-mode', 'disabled');
+          }
+        });
+
+      </script>
+      
+</body>
+</html>
